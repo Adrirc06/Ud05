@@ -14,7 +14,22 @@ function funcionFlecha() {
     
     // Funcion flecha con declaracion de varias filas
 
-    const sumatorio
+    const sumatorio = n =>{
+        let acu = 0;
+        for (let i = n; i > 0; i--) {
+            acu += i;
+        }
+        return acu;
+    }
+
+    console.log("El sumatorio es " + sumatorio(3));
+
+    const saludoDos = () => {
+        console.log("Adios sin parametros");
+    }
+
+    saludoDos();
+    
 }
 
 window.onload = function() {
